@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Maayan A. — Associate Scientist at Tenvie" />
+    <title>Maayan A. | Associate Scientist at Tenvie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <aside class="sidebar" aria-label="Sidebar">
+        <div class="sidebar-inner">
+          <div class="brand">
+            <h1>Maayan A.</h1>
+            <p>Associate Scientist at Tenvie</p>
+          </div>
+
+          <nav class="sidebar-nav" aria-label="Main navigation">
+            <a href="#about" class="active">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/in/maayan-a-bba080154/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="page-header">
+          <h2>Science-driven analysis &amp; experimental design</h2>
+          <p>
+            I help teams move from hypothesis to decisions by building reproducible
+            analytical workflows, communicating insights in clear reports, and keeping
+            projects aligned across science, product, and engineering.
+          </p>
+          <div class="page-actions">
+            <a class="btn" href="#contact">Connect on LinkedIn</a>
+            <a
+              class="outline-btn"
+              href="https://www.linkedin.com/in/maayan-a-bba080154/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View profile
+            </a>
+          </div>
+        </header>
+
+        <section class="section" id="about">
+          <div class="section-inner">
+            <h3>About</h3>
+            <p>
+              I work at the intersection of science and product delivery. At Tenvie, I
+              design experiments, analyze data at scale, and translate results into
+              actionable recommendations for cross-functional teams.
+            </p>
+            <p>
+              My background is in analytical chemistry and statistics, with a focus on
+              ensuring experimentation is reproducible, data is reliable, and insights
+              are easy to act on.
+            </p>
+            <dl class="details">
+              <div>
+                <dt>Current</dt>
+                <dd>Associate Scientist, Tenvie</dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Remote / Boston, MA</dd>
+              </div>
+              <div>
+                <dt>Connect</dt>
+                <dd>
+                  <a
+                    href="https://www.linkedin.com/in/maayan-a-bba080154/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="section" id="experience">
+          <div class="section-inner">
+            <h3>Experience</h3>
+            <div class="card-grid">
+              <article class="card">
+                <h4>Associate Scientist</h4>
+                <p class="card-meta">Tenvie</p>
+                <ul>
+                  <li>Design and run analytical experiments to validate product efficacy.</li>
+                  <li>Develop reliable data pipelines for large-scale result aggregation.</li>
+                  <li>Write clear reports and presentations for stakeholders and leadership.</li>
+                  <li>Collaborate closely with engineering teams to improve reproducibility.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-inner">
+            <h3>Projects</h3>
+            <p>
+              A few highlights of projects that demonstrate the types of problems I
+              enjoy solving and the level of impact I aim for.
+            </p>
+
+            <div class="card-grid">
+              <article class="card">
+                <h4>Automated Data Validation</h4>
+                <p class="card-meta">Workflow / QA</p>
+                <p>
+                  Built a validation pipeline that automatically checks incoming datasets
+                  for consistency and anomalies, reducing manual review time by over 50%.
+                </p>
+              </article>
+              <article class="card">
+                <h4>Experimental Design Framework</h4>
+                <p class="card-meta">Statistics / Planning</p>
+                <p>
+                  Developed a standardized experiment template and analysis toolkit used
+                  across multiple teams to improve repeatability and accelerate decision
+                  cycles.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <div class="section-inner">
+            <h3>Skills</h3>
+            <div class="skills-grid">
+              <span class="skill">Data analysis</span>
+              <span class="skill">Experimental design</span>
+              <span class="skill">Python / R</span>
+              <span class="skill">Statistics</span>
+              <span class="skill">Reproducible workflows</span>
+              <span class="skill">Stakeholder communication</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="section-inner">
+            <h3>Contact</h3>
+            <p>
+              The best way to connect is via LinkedIn — I’m happy to chat about
+              collaborations, technical questions, or new opportunities.
+            </p>
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/maayan-a-bba080154/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Message on LinkedIn
+            </a>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <p>© <span id="year"></span> Maayan A. • Built with GitHub Pages</p>
+        </footer>
+      </main>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const navLinks = document.querySelectorAll('.sidebar-nav a');
+      function setActiveLink() {
+        const fromTop = window.scrollY + 110;
+        navLinks.forEach((link) => {
+          const section = document.querySelector(link.hash);
+          if (!section) return;
+          const top = section.offsetTop;
+          const height = section.offsetHeight;
+          if (fromTop >= top && fromTop < top + height) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', setActiveLink);
+      window.addEventListener('load', setActiveLink);
+    </script>
+  </body>
+</html>
